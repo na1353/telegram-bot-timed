@@ -20,7 +20,7 @@ async function getSignedUrl(fileName) {
       validDurationInSeconds: 3600, // لینک یک‌ساعته
     });
 
-    const downloadUrl = `https://f002.backblazeb2.com/file/${process.env.B2_BUCKET_NAME}/${fileName}?Authorization=${response.data.authorizationToken}`;
+    const downloadUrl = `https://f003.backblazeb2.com/file/${process.env.B2_BUCKET_NAME}/${fileName}?Authorization=${response.data.authorizationToken}`;
     return downloadUrl;
   } catch (err) {
     console.error("خطا در ساخت لینک:", err);
